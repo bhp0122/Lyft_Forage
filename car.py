@@ -132,9 +132,9 @@ class OctoPrimeTires(Tire):
         total = 0
         for values in self._array:
             total += values
-            if total >= 0.9:
+            if total >= 3.0:
                 return True
-
+        # REDUCE: sum(self._array) >= 3.0
 
 '''
 Car Factory
